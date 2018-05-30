@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Tabber",
+  "version": "1.0",
+  "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "img.png"
+    },
+  "commands": {
+  "_execute_browser_action": {
+    "suggested_key": {
+      "default": "Ctrl+Z",
+      "mac": "MacCtrl+Z"
+    },
+    "description": "how to efficiently open specific tabs"
+    }
+  }
+}
