@@ -3,9 +3,12 @@
   "name": "Auto Tabber",
   "version": "1.0",
   "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": "img.png"
-    },
+    "default_popup": "popup.html",
+    "default_icon": "img.png"
+  },
+  "permissions": [
+    "storage", "tabs"
+  ],
   "commands": {
   "_execute_browser_action": {
     "suggested_key": {
