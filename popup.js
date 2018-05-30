@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
-  let urls = document.getElementsByClass('url')
+  let urls = document.getElementsByClassName('urls');
+  console.log(urls);
   let open = document.getElementById('open');
   open.addEventListener("click", function(event) {
     event.preventDefault();
@@ -11,3 +12,8 @@ document.addEventListener("DOMContentLoaded",function(){
     window.close();
   });
 });
+
+
+// chrome.storage.local.set({key: value}, function() {
+//   console.log('Value is set to ' + value);
+// });
