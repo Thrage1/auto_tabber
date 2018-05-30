@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
-  var open = document.getElementById('open');
+  let urls = document.getElementsByClass('url')
+  let open = document.getElementById('open');
   open.addEventListener("click", function(event) {
     event.preventDefault();
     var links = document.getElementsByTagName('a');
