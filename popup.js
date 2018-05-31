@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded",function(){
     console.log(urls);
     for(var i = 0; i < urls.length; i++){
       var url = urls[i];
-      chrome.tabs.create({url: url.value, selected: false})
+      if(url.value !== ''){
+        chrome.tabs.create({url: url.value, selected: false})
+      }
     }
     window.close();
 
